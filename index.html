@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-box">
+            <h2>Masuk ke Gramedia</h2>
+            <p>Silakan login terlebih dahulu untuk mengakses perpustakaan.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan admin" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan 123" required>
+                </div>
+                <p id="errorMsg" class="error-msg"></p>
+                <button type="submit" class="btn-login">Masuk</button>
+            </form>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="navkiri">
+            <h3>GRAMEDIA</h3>
+        </div>
+        <div class="navkanan">
+            <a href="#bawal" class="button aktif">Home</a>
+            <a href="about.html" class="button aktif">About</a>
+            <a href="#babuk" class="button aktif">Book</a>
+        </div>
+    </nav>
+    
+    <div class="container" id="bawal">
+        <div class="atap">
+            <h1>PERPUSTAKAAN BUKU</h1>
+            <p>Buku yang anda butuhkan semua ada disini </p>
+            
+            <div class="buttonpos">
+                <button class="buton">Dark</button>
+                <button class="buton">Light</button>
+            </div>
+        </div>
+        
+        <picture>
+            <source media="(max-width: 768px)" srcset="top: 0; z-index: 1000; /">
+            <img src="https://i.pinimg.com/1200x/48/22/b2/4822b2936cf28f1811105af02179e69b.jpg" alt="apalah" id="foto">
+        </picture>
+    </div>
+    
+    <div class="cardpos" id="babuk">
+        <div class="card">
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786022082125.jpg">
+                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786022082125.jpg" alt="Manusia dan Badannya" class="cardfoto">
+            </picture>
+            <div class="card-teks">
+                <h3>Manusia dan Badainya</h3>
+                <p>Novel Manusia dan Badainya karya Syahid Muhammad adalah kisah emosional tentang perjalanan penerimaan diri. Buku ini berfokus pada tokoh utama bernama Janu yang berjuang memulihkan luka batin akibat masa lalu, trauma, serta pola asuh yang kurang tepat.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/te9xm065-4.jpg">
+                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/te9xm065-4.jpg" alt="The Escape Room" class="cardfoto">
+            </picture>
+            <div class="card-teks">
+                <h3>The Escape Room</h3>
+                <p>Novel The Escape Room berpusat pada empat bankir Wall Street elit yang terjebak di dalam lift yang berubah menjadi arena permainan mematikan. Dirancang sebagai ajang balas endem, mereka dipaksa memecahkan teka-teki gelap dari masa lalu perusahaan dan rekan mereka sendiri untuk bisa keluar hidup-hidup.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/26-m454l2m.jpg">
+                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/26-m454l2m.jpg" alt="3726 mdpl" class="cardfoto">
+            </picture>
+            <div class="card-teks">
+                <h3>3726 mdpl</h3>
+                <p>Novel 3726 MDPL karya Nurwina Sari adalah kisah romansa berlatar alam yang menceritakan tentang perjuangan cinta, ketulusan, dan proses merelakan di antara megahnya Gunung Rinjani. Angka 3.726 merupakan representasi dari tinggi puncak tertinggi di Lombok tersebut. Buku ini diterbitkan oleh Penerbit Romancious.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.gramedia.com/products/seporsi-mie-ayam-sebelum-mati">
+            <picture>
+                <source media="(max-width: 768px)" srcset="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/95ob5m98ur.jpg">
+                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/95ob5m98ur.jpg" alt="Mie Ayam" class="cardfoto">
+            </picture>
+            </a>
+            <div class="card-teks">
+                <h3>Seporis Mie Ayam Sebelum Mati</h3>
+                <p>Novel Seporsi Mie Ayam Sebelum Mati karya Brian Khrisna mengisahkan titik balik kehidupan seorang pria depresi bernama Ale yang membatalkan niat bunuh dirinya hanya karena gagal menyantap semangkuk mi ayam. Melalui pendekatan fiksi reflektif yang diselingi komedi satir, novel terbitan Grasindo ini mengeksplorasi isu kesehatan mental, trauma masa kecil, serta pencarian makna hidup yang mendalam.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div>
+            <p>&copy; Copyright 2055 Jakarta Tenggelam</p>
+        </div>
+    </footer>
+    
+    <script src="web.js"></script>
+</body>
+</html>
